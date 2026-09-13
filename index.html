@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameCloud — Play More</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="logo">Game<span>Cloud</span></div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#discover">Discover</a>
+      <a href="#pass">Game Pass</a>
+      <a href="#library">Library</a>
+    </nav>
+    <button class="profile">●</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div>
+        <p class="eyebrow">YOUR GAME. YOUR CLOUD.</p>
+        <h1>Play more.<br><span>Wait less.</span></h1>
+        <p class="hero-copy">Discover games and enjoy your GameCloud Pass with simple, flexible plans.</p>
+        <a class="primary-btn" href="#pass">View Game Pass</a>
+      </div>
+      <div class="hero-card">
+        <div class="controller">🎮</div>
+        <p>GAMECLOUD</p>
+        <strong>READY TO PLAY</strong>
+      </div>
+    </section>
+
+    <section id="discover" class="section">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">DISCOVER</p>
+          <h2>Featured games</h2>
+        </div>
+        <input id="search" type="search" placeholder="Search games...">
+      </div>
+      <div id="games" class="game-grid"></div>
+    </section>
+
+    <section id="pass" class="section pass-section">
+      <div class="section-head centered">
+        <div>
+          <p class="eyebrow">GAMECLOUD PASS</p>
+          <h2>Pick your pass</h2>
+          <p>Choose a plan and unlock the GameCloud Pass experience.</p>
+        </div>
+      </div>
+      <div class="plans">
+        <article class="plan">
+          <p>1 MONTH</p>
+          <h3>₹300</h3>
+          <span>per month</span>
+          <button class="pass-btn" data-plan="1 Month" data-price="₹300">Choose plan</button>
+        </article>
+        <article class="plan featured">
+          <div class="badge">POPULAR</div>
+          <p>3 MONTHS</p>
+          <h3>₹750</h3>
+          <span>for 3 months</span>
+          <button class="pass-btn" data-plan="3 Months" data-price="₹750">Choose plan</button>
+        </article>
+        <article class="plan">
+          <p>1 YEAR</p>
+          <h3>₹2,500</h3>
+          <span>for 12 months</span>
+          <button class="pass-btn" data-plan="1 Year" data-price="₹2,500">Choose plan</button>
+        </article>
+      </div>
+      <div id="pass-status" class="status"></div>
+    </section>
+
+    <section id="library" class="section library">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">YOUR LIBRARY</p>
+          <h2>Saved games</h2>
+        </div>
+      </div>
+      <div id="library-list" class="library-list">
+        <p class="muted">No games saved yet. Tap “Save” on a game to add it here.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="logo">Game<span>Cloud</span></div>
+    <p>Made for gamers.</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
